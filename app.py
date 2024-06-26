@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, redirect
+from Streamlit import streamlit, render_template, request, redirect
 import pickle
 import sklearn
 import numpy as np                        # numpy==1.19.3
 
-app = Flask(__name__)
+app = Streamlit(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
